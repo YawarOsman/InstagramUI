@@ -39,65 +39,64 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     _tabController.dispose();
     super.dispose();
   }
-  List name=[
-    {"name": "rubix"},
-    {"name": "rubix"},
-    {"name": "fish"},
-    {"name": "car"},
-    {"name": "bycle"},
-    {"name": "rubix"},
-    {"name": "fish"},
-    {"name": "rubix"},
-    {"name": "rubix"},
-    {"name": "rubix"},
-    {"name": "rubix"},
-    {"name": "fish"},
-    {"name": "car"},
-    {"name": "bycle"},
-    ];
+ 
 
-  List storyList = [
+   List storyList = [
     {
       "imageUrl": "assets/1.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/2.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/yawar.jpg",
+      "name": "fish"
     },
     {
       "imageUrl": "assets/4.png",
+      "name": "car"
     },
     {
       "imageUrl": "assets/5.jpg",
+      "name": "bicycle"
     },
     {
       "imageUrl": "assets/6.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/yawar.jpg",
+      "name": "fish"
     },
     {
       "imageUrl": "assets/1.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/2.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/1.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/2.jpg",
+      "name": "rubix"
     },
     {
       "imageUrl": "assets/yawar.jpg",
+      "name": "fish"
     },
     {
       "imageUrl": "assets/4.png",
+      "name": "car"
     },
     {
       "imageUrl": "assets/5.jpg",
+      "name": "bicycle"
     },
 
   ];
@@ -268,7 +267,7 @@ backgroundColor: Colors.black,
                                   Padding(
                                       padding: EdgeInsets.only(left: 10,right: 10),
                                     child: Container(
-                                      child: Text(name[index]["name"],style: TextStyle(color: Colors.white),),
+                                      child: Text(storyList[index]["name"],style: TextStyle(color: Colors.white),),
                                     ),
                                   )
                                 ],
